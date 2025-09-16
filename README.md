@@ -25,16 +25,16 @@ Once it's built out, this will be a simple personal logging tool where you can:
 
 ```bash
 # Add a quick thought or note
-personal-log add "Just learned about B-trees and my brain hurts 🧠"
+cargo run add "Just learned about B-trees and my brain hurts 🧠"
 
 # Search through your entries
-personal-log search "rust" --since "last week"
+cargo run search "rust" --since "last week"
 
 # Export your data
-personal-log export --format csv --output my-thoughts.csv
+cargo run export --format csv --output my-thoughts.csv
 
 # View stats about your logging habits
-personal-log stats --monthly
+cargo run stats --monthly
 ```
 
 But honestly? The real product here is **knowledge**. Each feature is an excuse to dig deeper into how data systems work.
@@ -51,6 +51,7 @@ But that's okay! Every journey starts with a single step, and I'm planning to bu
 4. **Phase 4**: Search functionality and indexing strategies
 5. **Phase 5**: Export/import features and data migration patterns
 6. **Phase 6**: Performance optimization and advanced database concepts
+7. **Phase 7**: TUI
 
 ## Getting Started
 
