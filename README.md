@@ -37,6 +37,45 @@ cargo run export --format csv --output my-thoughts.csv
 cargo run stats --monthly
 ```
 
+Here’s a polished version that keeps it casual but improves grammar and flow:
+
+---
+
+Note: This implementation uses an in-memory database, so entries won’t stick around between runs. If you want persistence, you can tweak `src/models/db.rs` to use a real database. Another quick option is to use a file-based database with the command below:
+
+**Create a database and add a new entry**
+
+```bash
+cargo run -- --database test.db add "First entry: Learning Rust CLI development"
+```
+
+**Read - list all entries**
+
+```bash
+cargo run -- --database test.db list
+```
+
+**List with verbose output**
+
+```bash
+cargo run -- --database test.db --verbose list
+```
+
+**List with a limit**
+
+```bash
+cargo run -- --database test.db list --limit 2
+```
+
+**List in reverse order (newest first)**
+
+```bash
+cargo run -- --database test.db list --reverse
+```
+
+---
+
+
 But honestly? The real product here is **knowledge**. Each feature is an excuse to dig deeper into how data systems work.
 
 ## Current Status 🛠️
